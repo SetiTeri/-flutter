@@ -1,7 +1,9 @@
 abstract class MainScreenState{}
 
+class MainScreenHELPMEState extends MainScreenState {}
+
 class MainScreenUpdateCounterState extends MainScreenState{
-  final int value;
+  final double value;
 
   MainScreenUpdateCounterState({required this.value});
 }

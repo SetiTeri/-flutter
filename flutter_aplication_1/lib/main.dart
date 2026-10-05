@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Лабораторная работа 1 Макковеев Сергей Сергеевич'),
+          title: Text('Лабораторная работа 2 Макковеев Сергей Сергеевич'),
         ),
         body: MyHomePage(),
       ),

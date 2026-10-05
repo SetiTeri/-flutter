@@ -1,19 +1,18 @@
 import 'main_screen_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class MainScreenCubit extends Cubit<MainScreenState>{
-  MainScreenCubit() : super(MainScreenUpdateCounterState(value: 0));
+class MainScreenCubit extends Cubit<MainScreenState> {
+  MainScreenCubit() : super(MainScreenHELPMEState());
 
-  int counter = 0;
+  void calculate(String field1, String field2, String field3) {
+    final f1 = double.tryParse(field1) ?? 0;
+    final f2 = double.tryParse(field2) ?? 0;
+    final f3 = double.tryParse(field3) ?? 0;
 
-  void addValue(){
-    counter++;
-    emit(MainScreenUpdateCounterState(value: counter));
+    emit(MainScreenUpdateCounterState(value: f1 * f2 * f3));
   }
 
-void removeValue(){
-    counter--;
-    emit(MainScreenUpdateCounterState(value: counter));
+  void showForm() {
+    emit(MainScreenHELPMEState());
   }
-
 }

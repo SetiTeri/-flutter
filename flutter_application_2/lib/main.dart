@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Лабораторная работа 2 Макковеев Сергей Сергеевич'),
+        title: const Text('Лабораторная работа 3 Макковеев Сергей Сергеевич'),
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),
